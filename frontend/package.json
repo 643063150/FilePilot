@@ -63,7 +63,8 @@
       "createDesktopShortcut": true,
       "include": "installer.nsh",
       "shortcutName": "FilePilot",
-      "createStartMenuShortcut": true
+      "createStartMenuShortcut": true,
+      "deleteAppDataOnUninstall": true
     }
   }
 }

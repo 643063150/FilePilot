@@ -61,10 +61,9 @@ function extractHeadingsFromHtml(html) {
 }
 
 function getDbPath() {
-  // 数据存储在安装目录的 data 文件夹
-  // 这样卸载时可以轻松清理，用户也能找到
-  const installDir = path.dirname(process.execPath)
-  const dataDir = path.join(installDir, 'data')
+  // 数据存储在 AppData，更新时不会丢失
+  // 卸载时通过 deleteAppDataOnUninstall 配置清理
+  const dataDir = app.getPath('userData')
   if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true })
   }
