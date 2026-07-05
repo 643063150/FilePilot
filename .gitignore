@@ -1,0 +1,71 @@
+# 依赖
+node_modules/
+.pnp
+.pnp.js
+
+# 构建产物
+dist/
+release/
+*.exe
+*.msi
+*.dmg
+
+# 缓存
+.cache/
+*.cache
+.vite/
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 图标文件（保留原始 icon_file.png）
+frontend/icon_*.png
+frontend/icon_*.ico
+frontend/app.ico
+frontend/extracted_icon.ico
+
+# Playwright
+.playwright-mcp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.temp
+.tmp/
+
+# Electron 缓存
+electron/dist/
+
+# 测试文件
+test/
+*.test.js
+*.spec.js
+frontend/test.cjs
+*.bat
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 构建配置（保留 package.json）
+!package.json
+!package-lock.json
+
+# 文档（保留）
+!*.md
+!.gitignore
